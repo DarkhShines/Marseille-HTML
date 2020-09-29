@@ -1,0 +1,56 @@
+.Newsletter{
+    writing-mode: horizontal-tb;
+    background-image: url("photo_ia.jpg");
+    color: white; 
+}
+
+/* ci-dessous, position de l'image dans la div */
+.image {
+    background-image:url("../photo_ia_retouche.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ci-dessous bloc newsletter */
+.contactNewsletter{ /* bloc Newsletter */
+    border-radius: 13px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.35);
+}
+
+input{ /* A l'intérieur du formulaire */
+    background: none;
+    width: 300px;
+    border: 1px solid white;
+    color: white;
+}
+
+::placeholder{ /* Texte par défaut */
+    color: white;
+    padding-left: 70px;
+}
+
+.email{ /* icône enveloppe + formulaire */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i { /* icône enveloppe */
+    font-size: 25px;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+p{
+    padding-left: 40px;
+}
+
+button{
+    margin-left: 10px;
+}
+/*Fin du bloc Newsletter*/
