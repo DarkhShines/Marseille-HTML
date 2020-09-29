@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300&display=swap');
+/* Top page / logo et navbar  */
+/* bleu = color : #0047A3 */
+
+/* nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 11%;
+    background-color: white;
+} */
+body { 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 11%;
+    justify-content: space-between;
+    max-width: 1240px;
+}
+
+.logo {
+width: 160px;
+height: 130px;
+}
+
+.buttons {
+    float: right;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+.NavButton {
+    padding: 15px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color:#0047A3 ;
+    display: inline;
+}
+
+.NavButton a{
+    text-decoration: none;
+    color: #0047A3;
+    transition: 00.4s;
+}
+
+.NavButton a:hover {
+    font-size: 14px;
+    background-color: #0047A3;
+    color: white;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+
+
+
+
+/* BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE */
+.banniere {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../photomarseillebm.jpg");
+    border-top: 3px solid #C0C0C0;
+} 
+.textbanniere {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.textbanniere > H1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 0px 20px black;
+}
+.textbanniere > H2 {
+    color: white;
+    font-size: 35px;
+    text-shadow: 0px 0px 20px black;
+}
+.textbanniere > button {
+    padding: 15px;
+    border-radius: 16px;
+    background: none;
+    color: white;
+    border: 4px white solid;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 0px 20px black; /* Met une ombre noire sous le texte afin qu'il soit plus lisible*/
+}
+.textbanniere > button:hover {
+    border-color: #0047a3;
+    font-weight: bold;
+}
+
+/* MIDPAGE MIDPAGE */
+.midpage {
+    display: flex;
+    justify-content: space-between;
+    width: 1640px;
+}
+.part1, .part2, .part3 {
+    height: 250px;
+    width: 150px;
+    background-color: #0047A3;
+}
+/* NEWSLETTER NEWSLETTER NEWSLETTER */
+.Newsletter{
+    writing-mode: horizontal-tb;
+    background-image: url("photo_ia.jpg");
+    color: white; 
+}
+
+/* ci-dessous, position de l'image dans la div */
+.image {
+    background-image:url("../photo_ia_retouche.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ci-dessous bloc newsletter */
+.contactNewsletter{ /* bloc Newsletter */
+    border-radius: 13px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.35)
+}
+
+input{ /* A l'intérieur du formulaire */
+    background: none;
+    width: 280px;
+    border: 1px solid white;
+    color: white;
+}
+
+::placeholder{ /* Texte par défaut */
+    color: white;
+    padding-left: 70px;
+}
+
+.email{ /* icône enveloppe + formulaire */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i { /* icône enveloppe */
+    font-size: 23px;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+/* Fin bloc Newsletter */
+/* FOOTER FOOTER FOOTER FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 258px;
+    width: 1640px;
+    background-color: #C4C4C4;
+    padding: 0px;
+    margin: 0px;
+}
+.footernavlinks{
+    list-style-type: none;
+    margin-top: 25px;
+    text-align: center;
+    padding-left: 15px;
+    line-height: 46px;
+    /* border-right: 1px solid black; */
+    padding-right: 35px;
+}
+.footernavlinks a {
+    text-decoration: none;
+    color: black;
+}
+.social{
+
+    display: inline-block;
+    margin-top: 25px; 
+    /* border-right: 1px solid black; */
+    padding-right: 15px;
+}
+.socialicons li{
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+}
+.copyright{
+    margin-left: -15px;
+    margin-top: 63px;
+}
+.footerinfos{
+    list-style-type: none;
+    padding: 0px;
+}
+i {
+    padding-right: 20px; 
+    font-size: 25px;
+}
+.contactez {
+    padding: 0px;
+    line-height: 35px;
+}
+#infos {
+    padding-left: 15px;
+}
+.map {
+    color: black;
+}
+
+.icons{
+    list-style-type: none;
+}
