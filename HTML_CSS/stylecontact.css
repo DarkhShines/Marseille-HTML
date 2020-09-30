@@ -1,171 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300&display=swap');
+/* Top page / logo et navbar  */
+/* bleu = color : #0047A3 */
 
-
-body {
+body { 
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
-.fullpage {
-    position: relative;
-    width: 80%;
-}
-.toppage {
-    position: absolute;
-    width: 1440px;
-    height: 138px;
-    left: 0px;
-    top: 0px;
-}
-.navbar {
-    position: absolute;
-    top: 50px;
-    left: 1000px;
-    background-color: white;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: none;
-}
-  
-li {
-    float: left;
-    border-right: 1px solid white;
-    margin-right: 6px;
-}
-  
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 16px;
-    background-color: rgb(179, 179, 179);
-}
-  
-/* Change la couleur du lien quand survolé par la souris */
-li a:hover {
-    background-color: #0047a3;
-    color: white;
-  }
-.logoimg {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 0px;
-    left: 0px;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
 }
 
-/* BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE BANNIERE */
-.banniere > img {
-    position: absolute;
-    height: 300px;
-    width: 1400px;
-    top: 150px;
+.logo {
+width: 160px;
+height: 130px;
 }
-.banniere > H1 {
-    position: absolute;
-    top: 250px;
-    Left: 500px;
+
+.buttons {
+    float: right;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+.NavButton {
+    padding: 15px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color:#0047A3 ;
+    display: inline;
+}
+
+.NavButton a{
+    text-decoration: none;
+    color: #0047A3;
+    transition: 00.4s;
+}
+
+.NavButton a:hover {
+    font-size: 14px;
+    background-color: #0047A3;
     color: white;
+    padding: 20px;
+    transition: 0.4s;
+}
+#active {
+    font-size: 14px;
+    background-color: #0047A3;
+    color: white;
+    padding: 20px;
+    transition: 0.4s;
+}
+/* BANNIERE BANNIERE BANNIERE BANNIERE */
+.banniere {
+    background-image: url("../photomarseillebm_retouche.jpg");
+    display: flex;
+    height: 300px;
+    width: 1700px;
+    justify-content: center;
+    align-items: center;
+}
+.banniere h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.hi {
+    height: 150px;
+    width: 200px;
+    margin-right: 20px;
+}
+.paragraphhi {
+    width: 500px;
+}
+.merci {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.formulaire {
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 258px;
+    width: 1640px;
+    background-color: #C4C4C4;
+    padding: 0px;
+    margin: 0px;
+}
+.footernavlinks{
+    list-style-type: none;
+    margin-top: 25px;
+    text-align: center;
+    padding-left: 15px;
+    line-height: 46px;
+    border-right: 1px solid black;
+    padding-right: 35px;
+}
+.footernavlinks a {
+    text-decoration: none;
+    color: black;
+}
+.social{
+
+    display: inline-block;
+    margin-top: 25px; 
+    margin-bottom: 50px; 
+    border-right: 1px solid black; 
+    padding-right: 15px;
+}
+.socialicons li{
+    list-style-type: none;
+    display: inline;
     text-align: center;
 }
-.banniere > H2 {
-    position: absolute;
-    top: 300px;
-    Left: 500px;
-    color: white;
+.copyright{
+    margin-left: -15px;
+    margin-top: 63px;
 }
-.banniere > button {
-    padding: 15px;
-    position: absolute;
-    top: 370px;
-    Left: 650px;
-    border-radius: 16px;
-    background: none;
-    color: white;
-    border: 4px white solid;
-    font-size: 20px;
+.footerinfos{
+    list-style-type: none;
+    padding: 0px;
+}
+i {
+    padding-right: 20px; 
+    font-size: 25px;
+}
+.contactez {
+    padding: 0px;
+    line-height: 35px;
+    margin-bottom: 50px; 
+    margin-top: 25px;
+    padding-right: 10px;
+    border-right: 1px solid black; 
+}
+#contacteza {
     cursor: pointer;
 }
-.banniere > button:hover {
-    border-color: #0047a3;
-    font-weight: bold;
-}
-
-/* MILLIEU DE PAGE MILLIEU DE PAGE MILLIEU DE PAGE MILLIEU DE PAGE MILLIEU DE PAGE MILLIEU DE PAGE MILLIEU DE PAGE */
-.contacth1 {
-    position: absolute;
-    top: 450px;
-    left: 500px;
-}
-.contactp {
-    position: absolute;
-    top: 500px;
-    left: 500px;
-    width: 700px;
-}
-/* BAS DE PAGE,FOOTER BAS DE PAGE,FOOTER BAS DE PAGE,FOOTER BAS DE PAGE,FOOTER BAS DE PAGE,FOOTER BAS DE PAGE,FOOTER */
-footer {
-    position: relative; 
-    top: 1200px;
-    background-color: grey;
-    width: 1440px;
-    height: 138px;
-}
-.footernav {
-    position: absolute;
-    top: 20px; 
-    left: 20px;
-    padding-right: 8px;
-    border-right: black 1px solid;
-}
-.footernav > a{
-    color:white;
-    text-decoration: none;
-}
-.footernav > a:hover {
-    color:black;
-    text-decoration: none;
-}
-.social {
-    position: absolute;
-    color: white;
-    top: 20px;
-    left: 100px;
-}
-.icons {
-    justify-content: space-between;
-}
-.coordonnees {
-    position: absolute;
-    color: white;
-    top: 20px;
-    Left: 400px;
-    padding-left: 10px;
-    border-left: 1px solid Black;
-}
-.coordonnees > .contactus {
-    text-align: center; 
-}
-.coordonnees > a {
-    color:white;
-    text-decoration: none;
-}
-.coordonnees > a:hover {
-    color:black;
-    text-decoration: none;
+#infos {
+    padding-left: 15px;
 }
 .map {
-    position: absolute;
-    top: 0px;
-    left: 990px;
-    color: white;
+    color: black;
+    padding-right: 2px;
 }
-i{
-    margin-right: 5px;
+
+.icons{
+    list-style-type: none;
+}
+
+
+.formulaire {
+    width: 600px;
+    border: 1px solid #0047a3;
+    border-radius: 16px;
+    background-color: #F7F4F1;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#fname {
+    width: 120px;
+    margin-bottom: 20px;
+}
+#lname {
+    width: 118px;
+    margin-bottom: 20px;
+}
+#visitormail {
+    width: 285px;
+}
+#subject {
+    width: 550px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#button {
+    position: relative;
+    left: 495px;
+    cursor: pointer;
+}
+input, textarea {
+    border-radius: 16px;
+    border-color: #BAE0F7;
+    padding: 3px;
 }

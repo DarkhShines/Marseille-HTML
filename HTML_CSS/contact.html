@@ -7,58 +7,80 @@
     <script src="https://kit.fontawesome.com/38d87a500a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="fullpage">
-        <div class="toppage">
-            <div class="logo">
-                <a href="accueil.html"><img class="logoimg" src="../marseillelogo.png" alt="logo ville de Marseille"></a>
-            </div>
-            <div class="navbar">
-                <ul class="listbar">
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="projet.html">Projet</a></li>
-                    <li><a href="article.html">Article</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <div class="nav"></div>
+        <nav>
+            <a href="accueil.html"><img class="logo" src="../marseillelogo.png" alt="logo de la ville de Marseille"></a>
+            <div class="buttons">
+                <ul>
+                    <li class=NavButton><a href="accueil.html"> Accueil </a></li>
+                    <li class=NavButton><a href="projet.html"> Projet </a></li>
+                    <li class=NavButton><a href="article.html"> Articles </a></li>
+                    <li class=NavButton><a id="active" href="contact.html"> Contact </a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="banniere">
-            <img src="../photomarseillebm.jpg" alt="Photo de Marseille">
-        </div>
-        <div class="midpage">
-            <div class="contacth1"><h1>Merci pour votre visite</h1></div>
-            <div class="contactp"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra turpis metus, a maximus urna lacinia nec.
-                 Nam fermentum arcu nibh, vitae vehicula risus accumsan quis. Integer tempus ligula et maximus consectetur. Maecenas finibus lorem eu nulla vulputate,
-                  nec porta nibh imperdiet. Nulla eget quam rhoncus, vulputate magna vitae, sagittis risus. Donec pellentesque interdum porttitor. Donec sagittis,
-                   nisl et aliquet mollis, orci risus congue ligula, eu venenatis eros enim vel libero. Donec eget posuere dui, ac elementum justo. Aliquam erat volutpat.</p>
-            </div>
-        </div>
-        <div class="footer">
-            <footer>
-                <div class="footernav">
-                    <a href="accueil.html">Accueil</a><br>
-                    <a href="projet.html">Projet</a><br>
-                    <a href="team.html">Article</a><br>
-                    <a href="contact.html">Contact</a><br>
-                </div>
-                <div class="social">
-                    Rejoignez-nous sur nos réseaux sociaux !<br>
-                    <div class="icons">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-youtube"></i></div>
-                </div>
-                <div class="coordonnees">
-                    <span class="contactus">Contactez-nous</span><br><br>
-                    <i class="fas fa-globe"></i><a href="#">investissezpourmarseille.fr</a><br>
-                    <i class="fas fa-envelope"></i>investissezpourmarseille@gmail.com<br>
-                    <i class="fas fa-map-marker"></i>Rue de l'investissement, 13001 Marseille
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92899.82804107094!2d5.384990631528689!3d43.311755153273474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf4344da5333%3A0x40819a5fd970220!2sMarseille!5e0!3m2!1sfr!2sfr!4v1601018731733!5m2!1sfr!2sfr" width="450" height="135" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </footer>
-        </div>
+            </div>    
+        </nav>
     </div>
+    <div class="banniere">
+        <H1>Merci pour votre soutien</H1>
+    </div>
+    <div class="merci">
+        <img class="hi"src="../hi.jpeg" alt="HI">
+        <p class="paragraphhi">Les enjeux de la transition energétique sont fortement liés aux enjeux de la transition technologique.
+            Plus que jamais, nous avons besoin de faire avaner l'intelligence artificielle de la ville de Marseille.
+            Pour cela, nous avons besoin de vous. Merci de vous interesser à notre projet. Ensemble nous construisons
+            un avenir durable et prometteur.
+        </p>
+    </div>
+    <div class="formulaire">
+        <form action="/action_page.php">
+
+            <input type="text" onfocus="this.value=''" id="lname" name="lastname" placeholder="Votre nom">
+            <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
+            <input type="mail" id="visitormail" name="firstname" placeholder="Votre email"><br>
+            <textarea id="subject" name="subject" placeholder="Votre message"></textarea><br>
+            <input type="submit" id="button" value="Envoyer">
+          </form>
+    </div>
+    <div class="footer">
+        <div class="footernav">
+            <ul class="footernavlinks">
+                <li class="footerlink"><a class="buttonfooter" href="accueil.html">Accueil</a></li>
+                <li class="footerlink"><a class="buttonfooter" href="projet.html">Projet</a></li>
+                <li class="footerlink"><a class="buttonfooter" href="article.html">Articles</a></li>
+                <li class="footerlink"><a class="buttonfooter" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <p class="rejoingnez">
+                Rejoignez nous sur nos réseaux sociaux 
+            </p>
+
+            <ul class="socialicons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram-square"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+            </ul>
+
+            <p class="copyright">
+                Toute les images présentes sont libres de droits.
+            </p>
+    
+        </div>
+        
+        <div class="contactez">
+            <ul class="footerinfos">
+                <li id="infos">Contactez-nous</li>
+                <li><i class="fas fa-globe"></i><a href="#">investissezpourmarseille.fr</a></li>
+                <li><i id="investissez" class="far fa-envelope"></i>investissezpourmarseille@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i>Rue de l'investissement, 13001 Marseille</li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20696.62099947082!2d5.374107198949379!3d43.29548932733442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf4344da5333%3A0x40819a5fd970220!2sMarseille!5e0!3m2!1sfr!2sfr!4v1601281179541!5m2!1sfr!2sfr" width="450" height="258" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div> 
+    </div> 
 </body>
 </html>
